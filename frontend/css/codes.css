@@ -83,8 +83,6 @@ html {
   border: solid black 0.1rem;
 }
 
-#search {}
-
 #codeform {
   display: flex;
   justify-content: space-between;
