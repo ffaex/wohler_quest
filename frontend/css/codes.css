@@ -88,9 +88,6 @@ html {
     width: 60%;
     border: solid black 0.1rem;
 }
-#search{
-
-}
 
 #codeform{
   display: flex;
@@ -121,37 +118,17 @@ button[type = "submit"]{
     background-color: #006333;
 }
 
-
-
-
-
-
-
-
-
-
-.table{
+.fancytable{
     margin: 0 auto;
-	margin-top: 10% ;
-	width:70%;
-
-    /* margin-left: 50%; */
-    /* transform: translate(-50%,0); */
-    
+    margin-top: 10% ;
+    width:70%;
 }
-/*tbody{
-    
-    
-    overflow:auto;
-    height:200px;
-    width:100%; 
-}*/
 
 tbody {
     display: block; 
     max-height: 20rem; 
     overflow-y: scroll; 
-	scrollbar-width: none;  /* Firefox */
+	  scrollbar-width: none;  /* Firefox */
   }
 
 table::-webkit-scrollbar {
@@ -162,14 +139,13 @@ table{
     border-radius : 1.5rem;
     border: solid black 0.1rem;
     display:block;
-	margin: auto;
-	
+	  margin: auto;	
   }
   
   td,th {
     text-align: center;
     padding: 1rem 9rem;
-	white-space: nowrap;
+	  /* white-space: nowrap; */
     /*word-break: break-all;*/
   }
   
