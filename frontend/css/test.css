@@ -80,6 +80,17 @@ html {
     left: 0; 
 }
 
+.headline a{
+  margin-left: 5%;
+  font-size: 3rem;
+}
+
+.headline{
+  margin-top: 3%;
+}
+
+.class
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
