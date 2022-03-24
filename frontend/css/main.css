@@ -1,0 +1,146 @@
+/* main style*/
+
+html { 
+    background: url(../res/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background{
+    position : absolute;
+    min-width : 86%;
+    min-height: 86%;
+    background-color: white;
+    border-radius : 1.5rem;
+    left : 7%;
+    top : 7%;
+    box-shadow: 5px 5px 15px -2px #000000;
+    opacity : 0.95;
+}
+#bubble {
+    position : absolute;
+    width : 86%;
+    height: 86%;
+    border-radius : 1.5rem;
+    left : 7%;
+    top : 7%;
+    overflow : hidden;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#foreground {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	top : 0;
+	left : 0 ;
+	
+    background: url(foreground.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+}
+
+.nav ul { 
+  margin-left: 1%; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 20%;
+  text-align: left;
+  
+}
+
+.nav li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 1 0;
+}
+
+
+.nav a {   
+  color: rgb(110, 108, 108);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 1rem 2rem;
+  position: relative;
+  
+}
+
+.nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.1rem;
+  left: 40%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav a:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+/* tabel style */
+
+.outertable{
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 60%;
+    border-radius: 1.5rem;
+    border: solid black 0.1rem; 
+    height:60%;
+}
+
+.tablehead{
+    padding:   1rem 0;
+    width : 100%;
+    border-bottom: solid black 0.1rem; 
+    display: flex;
+    justify-content : space-around;
+    
+}
+
+.tablecontent{
+    padding-top : 1rem;
+    height : 90%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+div::-webkit-scrollbar {
+    display: none;
+}
+.tableline{
+    padding: 1rem 0;
+    display : flex;
+    justify-content : space-around;
+
+}
+
+.tablecell{
+    width : 8rem;
+    text-align : center;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+	#bubble{
+		background-color : black ;
+	}
+}
+
